@@ -1,0 +1,97 @@
+body{
+    width: 600px;
+    margin: 0px auto;
+    font-size: 20px;
+    background-color: #121212;
+}
+h1{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1.7em;
+    color: white;
+}
+#picture{
+    display: block;
+    margin : 2em auto;
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    box-shadow: 0 0 20px rgb(112, 110, 110);
+    animation: anime 2s ease-in-out infinite alternate ;
+    animation-play-state: paused;
+}
+@keyframes anime{
+0%{
+    box-shadow: 0 0 35px rgb(66, 66, 66)
+}
+25%{
+    box-shadow: 0 0 30px rgb(145, 143, 143)
+}
+50%{
+    box-shadow: 0 0 25px rgb(112, 110, 110)
+}
+75%{
+    box-shadow: 0 0 60px rgb(70, 70, 70)
+}
+100%{
+    box-shadow: 0 0 45px rgb(112, 110, 110)
+}
+}
+#img{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+}
+
+
+#icons{
+    width: 10em;
+    margin-left: 10.3em;
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+#icons i{
+    color: white;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+#line{
+    appearance: none;
+    height: 0.17em;
+    margin : 1em auto;
+    display: block;
+    width: 50%;
+    background-color: rgb(78, 67, 67);
+    cursor: pointer;
+}
+#line::-webkit-slider-thumb{
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    background-color: rgb(207, 204, 204);
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    animation: glow 5s linear infinite alternate;
+    cursor: pointer;
+} 
+@keyframes glow{
+    20%{
+        box-shadow: 0 0 25px white;
+    }
+    20%{
+        box-shadow: 0 0 15px white;
+    }
+    20%{
+        box-shadow: 0 0 20px white;
+    }
+    20%{
+        box-shadow: 0 0 25px white;
+    }
+    20%{
+        box-shadow: 0 0 10px white;
+    }
+
+}
+
+
